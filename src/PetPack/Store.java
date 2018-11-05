@@ -64,7 +64,7 @@ public class Store implements ActionListener {
 		storeFrame.getContentPane().add(label);
 		
 		JButton RedShirt = new JButton("Red Shirt");
-		RedShirt.setToolTipText("Note: Touching the pet will result in the destruction of his shirt or racial surgery momentarily");
+		RedShirt.setToolTipText("Note: Touching the pet will result in the destruction of his shirt or momentarily");
 		RedShirt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(GUIXlass.Money >= 10){
@@ -94,7 +94,7 @@ public class Store implements ActionListener {
 		storeFrame.getContentPane().add(label_3);
 		
 		JButton BlueShirt = new JButton("Blue Shirt");
-		BlueShirt.setToolTipText("Note: Touching the pet will result in the destruction of his shirt or racial surgery momentarily");
+		BlueShirt.setToolTipText("Note: Touching the pet will result in the destruction of his shirt momentarily");
 		BlueShirt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(GUIXlass.Money >= 20){
@@ -109,7 +109,7 @@ public class Store implements ActionListener {
 		storeFrame.getContentPane().add(BlueShirt);
 		
 		JButton PurpleShirt = new JButton("Purple Shirt");
-		PurpleShirt.setToolTipText("Note: Touching the pet will result in the destruction of his shirt or racial surgery momentarily");
+		PurpleShirt.setToolTipText("Note: Touching the pet will result in the destruction of his shirt momentarily");
 		PurpleShirt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(GUIXlass.Money >= 50){
@@ -124,21 +124,7 @@ public class Store implements ActionListener {
 		PurpleShirt.setBounds(198, 118, 100, 70);
 		storeFrame.getContentPane().add(PurpleShirt);
 		
-		JButton RacialSwap = new JButton("Racial Swap");
-		RacialSwap.setToolTipText("Note: Touching the pet will result in the destruction of his shirt or racial surgery momentarily");
-		RacialSwap.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				if(GUIXlass.Money >= 100){
-					GUIXlass.Animal = new ImageIcon(GUIXlass.class.getResource("/Images/BlackPet.png"));
-					GUIXlass.GOLD.setIcon(GUIXlass.Animal);
-				GUIXlass.Money -=100;
-				lblYourMoney.setText("Your Money: "   + GUIXlass.Money);
-			}}
-		});
-		RacialSwap.setFont(new Font("Eras Bold ITC", Font.PLAIN, 11));
-		RacialSwap.setBounds(298, 118, 100, 70);
-		storeFrame.getContentPane().add(RacialSwap);
-		
+
 		JButton candy = new JButton("Candy");
 		candy.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
